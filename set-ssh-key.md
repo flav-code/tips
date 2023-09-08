@@ -1,3 +1,5 @@
+# Authorize your machine to connect with a ssh key
+
 ## Generate the key
 ```
 ssh-keygen -t rsa -b 4096
@@ -14,7 +16,7 @@ $pubKey=(Get-Content "$PUBKEYPATH" | Out-String); ssh "$USER_AT_HOST" "mkdir -p 
 ```
 
 
-Linux => Linux
+## Linux => Linux
 ```
 export USER_AT_HOST="your-user-name-on-host@hostname"
 export PUBKEYPATH="$HOME/.ssh/id_pub.pub"
